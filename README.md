@@ -1,56 +1,106 @@
-# Welcome to your Expo app 👋
+# BudgetreeProducts — React Native Product App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A product browsing application built with **React Native, Expo, and TypeScript** as part of an App Developer assignment.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Product Listing:** Fetches products from the DummyJSON REST API.
+- **Product Cards:** Displays product images, titles, prices, and categories.
+- **Search:** Search products by title.
+- **Category Filter:** Filter products by category.
+- **Pull to Refresh:** Reload the product list.
+- **Product Details:** View product image, title, price, description, and category.
+- **Favorites:** Add and remove products from favorites.
+- **Persistent Storage:** Stores favorite products using AsyncStorage.
+- **Loading and Error States:** Provides feedback while products load or when a request fails.
+- **Navigation:** Uses Expo Router for screen navigation.
+
+## Tech Stack
+
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- REST API (DummyJSON)
+- AsyncStorage
+
+## API Endpoints
+
+- Products: https://dummyjson.com/products
+- Product Details: https://dummyjson.com/products/1
+- Product Categories: https://dummyjson.com/products/categories
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── _layout.tsx
+│   ├── (tabs)/
+│   │   ├── _layout.tsx
+│   │   ├── index.tsx
+│   │   ├── explore.tsx
+│   │   └── favorites.tsx
+│   └── product/
+│       └── [id].tsx
+└── components/
+    └── app-tabs.tsx
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- Expo-compatible development environment
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/prashant9732/BudgetreeProducts.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd BudgetreeProducts
+   ```
+
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+4. Start the development server:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+Follow the terminal instructions to run the app in your preferred supported environment.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Implementation Notes
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Product data is fetched from the DummyJSON API.
+- Expo Router handles navigation between the product listing, product details, and favorites screens.
+- AsyncStorage persists favorite products locally on the device.
+- Reusable React Native components and TypeScript types help keep the code organized.
 
-## Get a fresh project
+## Repository
 
-When you're ready, run:
+GitHub: https://github.com/prashant9732/BudgetreeProducts
 
-```bash
-npm run reset-project
-```
+## Screenshots
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Add screenshots of the following screens here before submission:
 
-### Other setup steps
+- Product Listing
+- Product Details
+- Favorites
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+---
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Developed by Prashant Verma**
