@@ -95,11 +95,14 @@ GitHub: https://github.com/prashant9732/BudgetreeProducts
 
 ## Screenshots
 
-Add screenshots of the following screens here before submission:
+### Product Listing
+![Product Listing](screenshots/home.png)
 
-- Product Listing
-- Product Details
-- Favorites
+### Product Details
+![Product Details](screenshots/product-details.png)
+
+### Favorites
+![Favorites](screenshots/favorites.png)
 
 ---
 
